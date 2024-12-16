@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Projects</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background-color: #121212;
+            color: #e0e0e0;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar {
+            background-color: #1f1f1f;
+            padding: 10px 20px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: #ffffff;
+        }
+
+        .navbar .nav-links li {
+            display: inline-block;
+            margin: 0 10px;
+        }
+
+        .navbar .nav-links a {
+            color: #e0e0e0;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        .navbar .nav-links a:hover {
+            color: #bb86fc;
+        }
+
+        h2 {
+            color: #bb86fc;
+            text-align: center;
+        }
+
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .portfolio-item {
+            background-color: #1e1e1e;
+            border: 1px solid #333;
+            border-radius: 8px;
+            overflow: hidden;
+            padding: 15px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .portfolio-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .portfolio-item h3 {
+            color: #bb86fc;
+        }
+
+        .portfolio-item p {
+            color: #e0e0e0;
+        }
+
+        footer {
+            background-color: #1f1f1f;
+            color: #e0e0e0;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        video {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">Hammas Studioz</div>
+        <ul class="nav-links">
+            <li><a href="#promotional-videos">Promotional Video Ads</a></li>
+            <li><a href="#animated-videos">Animated Promotional Videos</a></li>
+        </ul>
+    </header>
+
+    <main class="container">
+        <!-- Promotional Video Ads Section -->
+        <section id="promotional-videos" class="section">
+            <h2>Promotional Video Ads</h2>
+            <div class="portfolio-grid">
+                <!-- Replace with actual video project thumbnails -->
+                <div class="portfolio-item">
+                    <video controls>
+                        <source src="Videos/2.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <h3>Gray Scale</h3>
+                    <p>Short description of the project.</p>
+                </div>
+                <!-- Repeat for 5+ items -->
+                <div class="portfolio-item">
+                    <video controls>
+                        <source src="Videos/3.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <h3>Alfa Insurence</h3>
+                    <p>Short description of the project.</p>
+                </div>
+                <!-- Add more projects as needed -->
+            </div>
+        </section>
+
+        <!-- Animated Promotional Videos Section -->
+        <section id="animated-videos" class="section">
+            <h2>Animated Promotional Videos</h2>
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <video controls>
+                        <source src="Videos/1.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <h3>Qatar Recrucment Agency</h3>
+                    <p>Short description of the animated project.</p>
+                </div>
+                <!-- Repeat for 5+ items -->
+                <div class="portfolio-item">
+                    <video controls>
+                        <source src="Videos/6.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <h3>Self Directed Roth IRA</h3>
+                    <p>Short description of the animated project.</p>
+                </div>
+                <!-- Add more projects as needed -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 My Portfolio. All rights reserved.</p>
+    </footer>
+</body>
+</html>
